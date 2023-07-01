@@ -12,7 +12,6 @@
 }
 
 body {
-    color: #FFF;
     font-family: Helvetica, Verdana, sans-serif;
     font-size: 14px;
 }
@@ -38,7 +37,6 @@ body {
 .wrap {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .left .bg-img {
@@ -72,12 +70,36 @@ body {
 }
 
 .logo .creator {
+    color: #FFF;
     font-size: 5rem !important;
     font-family: 'cedarville' !important;
     margin-left: 1rem;
 }
 
 .img-copyright {
-    margin-top: auto;
+    margin: auto auto 0 auto;
     color: #d3d0d0;
+}
+
+/* The left side starts here */
+/* Note that div.wrap applies to both sides */
+
+.form-side {
+
+}
+
+header {
+    background-color: #eee;
+
+    font-size: 1.2rem;
+
+    height: 37vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 2rem 8vh;
+}
+
+h3 {
+    font-size: 1.3rem;
 }
