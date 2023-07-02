@@ -4,7 +4,7 @@ const inputs = document.getElementsByTagName("input");
 let i;
 for (i=0; i<=inputs.length; i++) {
     if (inputs[i] === undefined) continue;
-    inputs[i].addEventListener("blur", makeInvalid);
+    inputs[i].addEventListener("keyup", makeInvalid);
 }
 
 function makeInvalid(e) {
