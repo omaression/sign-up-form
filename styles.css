@@ -39,11 +39,10 @@ body {
 }
 
 .left .bg-img {
-    background-image: url(/media/navi-photography.jpg);
+    background-image: url(/media/Photo\ by\ Georgi\ Kalaydzhiev\ on\ Unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-color: #CCC;
     height: 100%;
     width: 100%;
 
@@ -60,7 +59,7 @@ body {
     top: 20vh;
 
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .logo img {
