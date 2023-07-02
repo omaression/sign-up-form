@@ -124,15 +124,37 @@ form {
     gap: .3rem;
 }
 
-form input[type="text"],
-form input[type="email"],
-form input[type="password"] {
+.valid-text {
     font-size: 1.1rem;
-    padding: 4px
+    padding: 4px;
+    border: 2px solid #CCC;
+    border-radius: 5px;
+}
+
+.valid-text:focus {
+    outline: none;
+    border: 2px solid #84b2e6;
+}
+
+.invalid-text {
+    outline: none;
+    font-size: 1.1rem;
+    padding: 4px;
+    border: 2px solid #ff6161;
+    border-radius: 5px;
 }
 
 form label {
     text-transform: uppercase;
+}
+
+#matchingPasswords {
+    color: #ff6161;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    min-height: 1rem;
+    margin: 1px 0 0 2px;
 }
 
 footer {

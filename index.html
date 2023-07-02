@@ -31,21 +31,21 @@
                 <div class="form-row">
                     <div class="form-column">
                         <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" id="first-name" />
+                        <input type="text" name="first-name" id="first-name" class="valid-text" />
                     </div>
                     <div class="form-column">
                         <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="last-name" />
+                        <input type="text" name="last-name" id="last-name" class="valid-text" />
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-column">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required />
+                        <input type="email" name="email" id="email" required class="valid-text" />
                     </div>
                     <div class="form-column">
                         <label for="phone">Phone Number</label>
-                        <input type="text" name="phone" id="phone"
+                        <input type="text" name="phone" id="phone" class="valid-text"
                             pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}"
                             placeholder="+99(99)9999-9999"
                             title="Please write your number in this form +99(99)9999-9999!"/>
@@ -54,19 +54,21 @@
                 <div class="form-row">
                     <div class="form-column">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" minlength="8" required/>
+                        <input type="password" name="password" id="password" minlength="8" required class="valid-text" />
+                        <span id="matchingPasswords"></span>
                     </div>
                     <div class="form-column">
                         <label for="confirm-password">Confirm Password</label>
-                        <input type="password" name="confirm-password" id="confirm-password" minlength="8" required/>
+                        <input type="password" name="confirm-password" id="confirm-password" minlength="8" required class="valid-text" />
                     </div>
                 </div>
             </form>
             <footer>
-                <input type="submit" form="sign-up-form" value="Create Account" />
+                <input type="submit" form="sign-up-form" id="submit" value="Create Account" />
                 <div class="already-user">Already have an account? <a href="#">Login</a></div>
             </footer>
         </div>
     </div>
+    <script src="./scrip.js"></script>
 </body>
 </html>
