@@ -18,8 +18,54 @@
     </div>
 
     <div class="split right">
-        <div class="wrap">
-            <form action="#" method="post"></form>
+        <div class="wrap form-side">
+            <header>
+                <p>This is not a real website! I'm just practicing a little thing. 
+                    I'm just trying to build a mock sign-up form.<br />
+                    Sign up now to get started.<br /><br /><br />
+                    You <em>know</em> you want to.
+                </p>
+            </header>
+            <h3>Let's do this!</h3>
+            <form action="#" method="post" id="sign-up-form">
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" />
+                    </div>
+                    <div class="form-column">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required />
+                    </div>
+                    <div class="form-column">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone"
+                            pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}"
+                            placeholder="+99(99)9999-9999"
+                            title="Please write your number in this form +99(99)9999-9999!"/>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" minlength="8" required/>
+                    </div>
+                    <div class="form-column">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" minlength="8" required/>
+                    </div>
+                </div>
+            </form>
+            <footer>
+                <input type="submit" form="sign-up-form" value="Create Account" />
+                <div class="already-user">Already have an account? <a href="#">Login</a></div>
+            </footer>
         </div>
     </div>
 </body>
