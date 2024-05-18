@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "Cedarville";
-    src: url(/media/CedarvilleCursive-Regular.ttf) format("truetype");
+    src: url(./media/CedarvilleCursive-Regular.ttf) format("truetype");
 }
 
 body {
@@ -39,7 +39,7 @@ body {
 }
 
 .left .bg-img {
-    background-image: url(/media/Photo\ by\ Georgi\ Kalaydzhiev\ on\ Unsplash.jpg);
+    background-image: url(./media/Photo\ by\ Georgi\ Kalaydzhiev\ on\ Unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
